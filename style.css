@@ -1,0 +1,1212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    user-select: none; /* bloqueia seleção de texto */
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Vídeo de fundo */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Fica atrás do conteúdo */
+  filter: brightness(0.6); /* escurece para destacar texto */
+}
+
+.hero-text {
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text .h1CardHero {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-top: 0; /* tira espaço acima do h1 */
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff7300;
+  color: #000;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+
+}
+
+.btn:hover {
+  background: #ff9a3c;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center; /* <-- impede os cards de esticarem */
+  gap: 20px;
+  background: #111;
+  padding: 60px 10%;
+  background-image: url(img/controlePs.png);
+  background-color: #000123;
+  height: 100vh; /* seção continua tela cheia */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+
+.card {
+  background: linear-gradient(135deg, #3603dc, #ff0000);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;              /* coloca conteúdo lado a lado */
+    max-width: 600px;
+  align-items: center;        /* centraliza verticalmente */
+  gap: 15px;                  /* espaço entre img e textos */
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  width: 100%;
+  margin-bottom: 30px;
+  
+}
+
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+.card-text {
+  display: flex;
+  flex-direction: column; /* coloca h2 em cima e p embaixo */
+  text-align: center;       /* alinhamento à esquerda */
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p.highlight {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card img {
+  width: 100px;     /* ajusta tamanho do ícone */
+  height: 100px;    /* mantém quadrado */
+  object-fit: contain;
+}
+
+
+
+.sectionCard{
+  width: 50%;
+  height: 67vh;
+}
+
+
+
+.h1Card {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  margin-top: 0; /* tira espaço acima do h1 */
+}
+
+
+.h2Card{
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+    font-weight: 300;
+  font-style: normal;
+  margin-top: 2rem;
+}
+
+
+/* BOTÃO WHATSAPP */
+.btn-whatsapp {
+  display: inline-flex;
+    font-family: "Bebas Neue", sans-serif;
+
+  align-items: center;
+  background-color: #058132; /* verde WhatsApp */
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 60px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 4rem;
+
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #05702c; /* verde WhatsApp */
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION 2 */
+.section2 {
+  width: 100%;
+  min-height: 110vh;
+  background: linear-gradient(135deg, #000123, #05002d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.title-container {
+  text-align: center;
+  max-width: 800px;
+}
+
+.h1Section2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 1rem; /* espaço abaixo do h1 */
+}
+
+.h1Games {
+  color: #ff0073; /* destaque para “ATOMIC GAMES” */
+}
+
+.h1Games2{
+color: #ff0073;
+font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  margin-top: 6rem;
+
+
+
+}
+
+.h2Section2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.scroll-btn svg {
+  width: 60px;
+  height: 60px;
+  stroke: #ff0073; /* cor da seta */
+  transition: transform 0.2s ease-in-out;
+  animation: bounce 3s infinite;
+
+}
+
+.scroll-btn:hover svg {
+  transform: translateY(4px); /* animação descendo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('img/fundo.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desfoque {
+  width: 700px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* sempre 3 colunas */
+  gap: 30px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+
+.teste:hover{
+  transform: scale(1.2);
+}
+
+
+.h2Section3{
+  
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+    font-weight: 300;
+  font-style: normal;
+  margin-bottom: 6rem;
+  margin-top: -30px;
+
+}
+
+.section4{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000123;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5%;
+  gap: 50px;
+  flex-wrap: wrap; /* Para responsivo */
+}
+
+.div5{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.div5 img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: contain;
+  animation: pulse 5s infinite;
+}
+
+
+
+.div5pt2{
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section4-title{
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+
+}
+
+.section4-text{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ccc;
+    font-family: "Inter", sans-serif;
+
+}
+
+.btn-section4{
+  text-decoration: none;
+  background-color: #dd0d52;
+  color: #fff;
+  padding: 15px 30px;
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-section4:hover{
+  background-color: #ce0447;
+}
+
+
+
+
+.div6{
+  flex: 1;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.div6 img {
+   width: 100%;
+  max-width: 1000px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #111;
+  padding: 60px 10%;
+  background-image: url(img/manutencao.png);
+  background-color: #000123;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  z-index: 1;
+}
+
+/* Máscara escura */
+.cards1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* ajuste a opacidade (0.4–0.7) */
+  z-index: 0;
+}
+
+/* Garante que o conteúdo fique acima da máscara */
+.cards1 > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.h1Card7{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin-top: 0; /* tira espaço acima do h1 */
+}
+
+
+.card1 {
+  background: linear-gradient(135deg, #3603dc, #ff0000);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;              /* coloca conteúdo lado a lado */
+    max-width: 600px;
+  align-items: center;        /* centraliza verticalmente */
+  gap: 15px;                  /* espaço entre img e textos */
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  width: 100%;
+  margin-bottom: 30px;
+  
+}
+
+
+
+.card1:hover {
+  transform: translateY(-10px);
+}
+.card-text {
+  display: flex;
+  flex-direction: column; /* coloca h2 em cima e p embaixo */
+  text-align: center;       /* alinhamento à esquerda */
+}
+
+.card1 h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card1 p.highlight {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card1 img {
+  width: 60px;     /* ajusta tamanho do ícone */
+  height: 60px;    /* mantém quadrado */
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px 20px;
+      gap: 50px;
+  background-color: #000123;
+    }
+
+    .contact-text {
+      max-width: 450px;
+    }
+
+    .contact-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .contact-text p, .contact-info {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info a {
+      color: #ff1a65;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .social-icons a {
+      display: flex;
+      
+      width: 70px;
+      height: 70px;
+      background-color: transparent;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icons .whatsapp:hover {
+      background-color: #087729;
+      transform: scale(1.1);
+    }
+
+
+    
+    .social-icons .facebook:hover {
+      background-color: #09309b;
+      transform: scale(1.1);
+    }
+
+     
+    .social-icons .instagram:hover {
+      background-color: #ff0055;
+      transform: scale(1.1);
+    }
+
+    .contact-form {
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      resize: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #666;
+    }
+
+    .contact-form button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff1a65;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e60057;
+      transform: scale(1.05);
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes da animação */
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+}
+
+/* Animação de pulse profissional */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.1;
+  }
+}
+
+
+
+
+/* ============================= */
+/* RESPONSIVIDADE PROFISSIONAL */
+/* ============================= */
+
+/* Tablets (até 1024px) */
+/* ============================= */
+/* RESPONSIVIDADE PROFISSIONAL — TABLETS */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 6%;
+    gap: 40px;
+  }
+
+  .hero-text {
+    max-width: 700px;
+  }
+
+  .hero-text .h1CardHero {
+    font-size: 2.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .hero-image img {
+    max-width: 420px;
+    margin-top: 30px;
+  }
+
+  /* SEÇÃO DE CARDS */
+  .cards, .cards1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 100px 6%;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .card, .card1 {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .card img, .card1 img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectionCard {
+    width: 100%;
+    height: auto;
+  }
+
+  /* SECTION 2 */
+  .section2 {
+    padding: 100px 6%;
+    text-align: center;
+  }
+
+  .h1Section2 {
+    font-size: 3rem;
+  }
+
+  .h2Section2 {
+    font-size: 1.4rem;
+  }
+
+  .h1Games2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* SECTION 3 */
+  .section3 {
+    height: auto;
+    padding: 100px 5%;
+  }
+
+  .desfoque {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+  }
+
+  .h2Section3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  /* SECTION 4 */
+  .section4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 6%;
+    gap: 80px;
+  }
+
+  .div5 img, .div6 img {
+    max-width: 500px;
+  }
+
+  .section4-title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .section4-text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+  }
+
+  .btn-section4 {
+    width: auto;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+  }
+
+  /* CONTATO */
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 6%;
+    gap: 60px;
+  }
+
+  .contact-text {
+    max-width: 700px;
+  }
+
+  .contact-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .contact-text p {
+    font-size: 1.1rem;
+  }
+
+  .contact-form {
+    max-width: 600px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-icons a {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+    min-height: auto;
+  }
+
+  .hero-text .h1CardHero {
+    font-size: 2rem;
+  }
+
+  .h1Card {
+    font-size: 2.5rem;
+  }
+
+  .h2Card {
+    font-size: 1.4rem;
+  }
+
+  .h1Games2{
+        font-size: 1.6rem;
+text-align: center;
+  }
+
+  .cards, .cards1 {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 5%;
+    gap: 40px;
+  }
+
+  .card, .card1 {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+
+  .section3{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  
+  .sectionCard{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1Card{
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .h2Card{
+    text-align: center;
+  }
+
+  .card img, .card1 img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .section2 {
+    padding: 40px 5%;
+  }
+
+  .h1Section2 {
+    font-size: 2.5rem;
+  }
+
+  .h2Section2 {
+    font-size: 1.2rem;
+  }
+
+  .desfoque {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 90px;
+    margin-top: -40px;
+  }
+
+  .desfoque span {
+    font-size: 15px;
+  }
+
+  .h2Section3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .section4 {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  .section4-title {
+    font-size: 2.2rem;
+  }
+
+  .section4-text {
+    font-size: 1rem;
+  }
+
+  .btn-section4 {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .contact-text h1 {
+    font-size: 2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .social-icons{
+  display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;  
+}
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .h1Card7{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+
+/* ============================= */
+/* CELULARES PEQUENOS (ATÉ 400px) */
+/* ============================= */
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 4%;
+    min-height: auto;
+  }
+
+  .hero-text .h1CardHero {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .h1Card {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .h2Card {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .h1Games2 {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .cards, .cards1 {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 4%;
+    gap: 35px;
+  }
+
+  .card, .card1 {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card img, .card1 img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px 4%;
+  }
+
+  .sectionCard {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1Card {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .h2Card {
+    text-align: center;
+  }
+
+  .h1Section2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .h2Section2 {
+    font-size: 1rem;
+  }
+
+  .desfoque {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 70px;
+  }
+
+  .desfoque span {
+    font-size: 13px;
+  }
+
+  .h2Section3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+
+  .section4 {
+    flex-direction: column;
+    padding: 30px 4%;
+    text-align: center;
+  }
+
+  .section4-title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .section4-text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .btn-section4 {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 0.9rem;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 35px 4%;
+    gap: 20px;
+  }
+
+  .contact-text h1 {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .h1Card7 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
